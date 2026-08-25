@@ -3,6 +3,8 @@ import { useMemo, useRef, useState } from "react";
 import { ArrowDownLeft, ArrowUpRight, BarChart3, CheckCircle2, FileText, Loader2, Search, ShieldCheck, Sparkles, Upload, Users, X } from "lucide-react";
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 
+pdfjsLib.GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/legacy/build/pdf.worker.mjs", import.meta.url).toString();
+
 type Tx={date:string;time:string;description:string;amount:number;party:string;direction:"sent"|"received"};
 type Person={name:string;count:number;sent:number;received:number};
 const money=(n:number)=>new Intl.NumberFormat("en-NG",{style:"currency",currency:"NGN",maximumFractionDigits:2}).format(n);
