@@ -6,3 +6,10 @@
 /* Consistent breathing room: keep headings and labels clear of divider lines across all dashboard sections. */
 .aiHead{padding:21px 20px 19px;line-height:1.45}.aiHead h3{line-height:1.35;margin:0 0 7px}.aiHead p{line-height:1.5}.aiList>button{padding-top:15px;padding-bottom:15px;line-height:1.4}.aiList b{line-height:1.35}.aiList span{line-height:1.45}.cat{padding-top:15px;padding-bottom:15px}.cat div:first-child b{line-height:1.35}.cat div:first-child span{line-height:1.45}.aiRecurring{padding-top:16px;padding-bottom:16px}.aiRecurring b{line-height:1.4}.aiRecurring span{line-height:1.45}.aiNotice{line-height:1.55}.aiMonthCard>span,.aiMonthCard>p{line-height:1.45}.aiMonthCard>div>div{line-height:1.35}.aiLegend{padding-top:2px;line-height:1.4}.aiPrivacy{line-height:1.45}
 @media(max-width:520px){.aiHead{padding:18px 15px 17px}.aiList>button{padding-top:14px;padding-bottom:14px}.cat{padding-top:14px;padding-bottom:14px}.aiRecurring{padding-top:14px;padding-bottom:14px}}
+
+/* Financial analysis navigation icons */
+.aiMenu button{display:grid;grid-template-columns:30px 1fr 16px;align-items:center;gap:9px;justify-content:initial}
+.aiMenuItemIcon{width:30px;height:30px;display:grid;place-items:center;color:#657387}
+.aiMenuItemIcon svg{width:25px;height:25px;stroke-width:1.8}
+.aiMenuItemLabel{min-width:0}
+.aiMenu button.active .aiMenuItemIcon,.aiMenu button:hover .aiMenuItemIcon{color:#1767ff}
